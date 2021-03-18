@@ -1,6 +1,6 @@
 # README
 
-## To see the heroku website
+## Link to the website
 
 go to https://basecamp-17.herokuapp.com
 
@@ -13,21 +13,19 @@ go to https://basecamp-17.herokuapp.com
 - inside projects you can create discutions, attachments, and todo list
 - you can use a chatroom inside a project
 
-## This steps are necessary to get the application up and running.
+## Installed instructions
 
 1. install yarn, npm, sqlite3, ruby, rails
 2. ruby version 2.6.6
-3. to run a server  
-   `rails server`  
-   \*To stop the web server, hit Ctrl+C in the terminal window where it's running.
-   Things you may want to cover:
+3. to run a server: `rails server`
 4. for db migration: `rails db:migrate`
 
 ## Deployment instruction
 
-**it happens on main branch**  
 $ heroku login  
 $ git add .  
 $ git commit -am "make it better"  
 $ git push heroku main  
 $ heroku run rails db:migrate
+
+We deploy it on the main branch
