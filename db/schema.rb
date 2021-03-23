@@ -33,6 +33,11 @@ ActiveRecord::Schema.define(version: 2021_03_03_225540) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "attachments", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "chatmessages", force: :cascade do |t|
     t.text "body"
     t.integer "user_id"
